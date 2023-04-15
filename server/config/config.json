@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
+    "username": "dbadmin",
+    "password": "dbadmin",
     "database": "todos",
-    "host": "127.0.0.1",
+    "host": "3.85.239.134",
     "dialect": "mysql"
   },
   "unitTest": {
