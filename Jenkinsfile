@@ -6,18 +6,20 @@ pipeline {
     }
 
     stages {
-        stage('Stop Processors') {
-            steps {
-                sshagent(['ubuntu']) {
-                sh ' $REHO sudo pm2 stop 0 1'
-             }
-            }
-        }
-        
         stage('Git Pull') {
             steps {
                 sshagent(['ubuntu']) {
                 sh ' $REHO sudo sh ./node-repo/gitPull.sh '
+                sh ' $REHO sudo sh sudo cp -Rrp node-repo/maintenance-page.html /custom/maintenance.html '
+             }
+            }
+        }
+        
+        
+        stage('Stop Processors') {
+            steps {
+                sshagent(['ubuntu']) {
+                sh ' $REHO sudo pm2 stop 0 1'
              }
             }
         }
