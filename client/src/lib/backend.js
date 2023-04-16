@@ -21,7 +21,7 @@ class BackendService {
       }
     }
 
-    const url = `http://44.202.98.0:3001/api${resource}`;
+    const url = `http://44.202.39.237:3001/api${resource}`;
     return axios[method](url, data, config).then(function ({
       status,
       data
