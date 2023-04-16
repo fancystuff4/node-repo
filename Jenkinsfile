@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sshagent(['ubuntu']) {
                 sh ' $REHO sudo sh ./node-repo/gitPull.sh '
-                sh ' $REHO sudo sh sudo cp -Rrp node-repo/maintenance-page.html /custom/maintenance.html '
+                sh ' $REHO sudo sh cp -Rrp node-repo/maintenance-page.html /custom/maintenance.html '
              }
             }
         }
