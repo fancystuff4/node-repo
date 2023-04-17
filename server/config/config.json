@@ -3,7 +3,7 @@
     "username": "dbadmin",
     "password": "dbadmin",
     "database": "todos",
-    "host": "52.91.254.29",
+    "host": "3.94.187.156",
     "dialect": "mysql"
   },
   "unitTest": {
