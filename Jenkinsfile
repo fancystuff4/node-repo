@@ -27,7 +27,7 @@ pipeline {
         stage('Backend Application Setup') {
             steps {
                 sshagent(['ubuntu']) {
-                sh '$REHO sudo sh ./node-repo/backendSetup.sh'
+                sh '$REHO sudo sh ./node-repo/backendSetup.sh '
              }
             }
         } 
