@@ -35,7 +35,7 @@ pipeline {
         stage('Frontend Application Setup') {
             steps {
                 sshagent(['ubuntu']) {
-                sh '$REHO sudo sh ./node-repo/frontendSetup.sh'
+                sh '$REHO sudo sh ./node-repo/frontendSetup.sh '
              }
             }
         } 
